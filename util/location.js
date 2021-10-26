@@ -26,9 +26,13 @@ async function getCoordsForAddress(address) {
     throw error;
   }
 
-  const coordinates = data.results[0].geometry.location;
+  // const coordinates = data.results[0].geometry.location;
 
-  return coordinates;
+  // return coordinates;
+  return {
+    lat: 40.7484474,
+    lng: -73.9871516
+  };
 }
 
 module.exports = getCoordsForAddress;
